@@ -48,20 +48,20 @@
                 <b-table-column label="Parent Property" searchable v-if="!isDatamaps">
                     {{ props.row.parents.length > 0 ? props.row.parents[0] : 'No parents' }}
                 </b-table-column>
-                <b-table-column field="fields.type" label="Type">
+                <b-table-column field="fields.type" label="Type" searchable width="140px">
                   <span :class="formatTypeClass(props.row.fields.type)">{{props.row.fields.type}}</span>
                 </b-table-column>
-                <b-table-column label="Flags">
+                <b-table-column label="Flags" field="props.row.field.flags">
                   {{ props.row.fields.flags.join(", ") }}
                 </b-table-column>
-                <b-table-column field="fields.bytes" label="Bytes" v-if="isDatamaps">
+                <b-table-column field="fields.bytes" searchable label="Bytes" v-if="isDatamaps" width="40px">
                   <span>{{props.row.fields.bytes}}</span>
                 </b-table-column>
                 <template v-else>
-                <b-table-column field="fields.bits" label="Bits">
+                <b-table-column field="fields.bits" searchable label="Bits" width="80px">
                   <span>{{props.row.fields.bits}}</span>
                 </b-table-column>
-                <b-table-column field="fields.offset" label="Offset">
+                <b-table-column field="fields.offset" label="Offset" searchable  width="100px">
                   <span>{{props.row.fields.offset}}</span>
                 </b-table-column>
                 </template>
