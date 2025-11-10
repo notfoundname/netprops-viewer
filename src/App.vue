@@ -6,6 +6,8 @@
       <router-link to="/l4d2/datamaps">L4D2: Datamaps</router-link> |
       <router-link to="/csgo/netprops">CSGO: Netprops</router-link> |
       <router-link to="/tf2/netprops">TF2: Netprops</router-link> |
+      <router-link to="/css/netprops">CSS: Netprops</router-link> |
+      <router-link to="/css/datamaps">CSS: Datamaps</router-link> |
       <router-link to='/custom'>Upload Custom</router-link>
 
       <span v-if="selection" style="margin-left: 20em">
