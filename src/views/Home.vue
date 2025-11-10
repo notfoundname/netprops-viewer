@@ -26,6 +26,11 @@
           <td><router-link to="csgo/netprops">View</router-link></td>
           <td></td>
         </tr>
+        <tr>
+          <td>CS: Source</td>
+          <td><router-link to="css/netprops">View</router-link></td>
+          <td><router-link to="css/datamaps">View</router-link></td>
+        </tr>
       </tbody>
     </div>
     <br />
